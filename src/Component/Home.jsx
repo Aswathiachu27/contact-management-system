@@ -9,7 +9,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(()=>{
-    axios.get('https://mpserver-jv3t.onrender.com/create')
+    axios.get('https://mpserver-jv3t.onrender.com/create/')
     .then(res => setData(res.data))
     .catch(err => console.log(err));
   },[])
@@ -17,7 +17,7 @@ function Home() {
   const handleDelete=(id)=>{
     const confirm = window.confirm("would you like to Delete?");
     if(confirm){
-      axios.delete('https://mpserver-jv3t.onrender.com/create'+id)
+      axios.delete('https://mpserver-jv3t.onrender.com/create/'+id)
       .then (res =>{
         location.reload();
       }).catch(err => console.log(err))
