@@ -7,7 +7,7 @@ function View() {
   const {id} = useParams();
 
   useEffect(()=>{
-    axios.get('https://mpserver-jv3t.onrender.com/create/'+id)
+    axios.get('https://mpserver-jv3t.onrender.com/create'+id)
     .then(res => setData(res.data))
     .catch(err => console.log(err));
   },[])

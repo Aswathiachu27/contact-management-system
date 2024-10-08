@@ -16,7 +16,7 @@ function Update() {
 const navigate = useNavigate();
 
   useEffect(()=>{
-    axios.get('http://localhost:3000/create/'+id)
+    axios.get('http://localhost:3000/create'+id)
     .then(res => {
       setValues(res.data)
     })
@@ -25,7 +25,7 @@ const navigate = useNavigate();
 
   const handleUpdate=(event)=>{
     event.preventDefault();
-    axios.put('https://mpserver-jv3t.onrender.com/create/'+id,values)
+    axios.put('https://mpserver-jv3t.onrender.com/create'+id,values)
     .then(res => {
       console.log(res);
       navigate('/home')
