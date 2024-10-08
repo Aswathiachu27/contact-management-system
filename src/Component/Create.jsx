@@ -16,7 +16,7 @@ const navigate = useNavigate();
 const handleSubmit = (event)=>{
   event.preventDefault();
   if(values.name && values.email && values.phone){
-    axios.post('http://localhost:3000/create/',values)
+    axios.post('https://mpserver-jv3t.onrender.com/create/',values)
     .then(res => {
     console.log(res);
     navigate('/')

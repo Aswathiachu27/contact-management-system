@@ -25,7 +25,7 @@ const navigate = useNavigate();
 
   const handleUpdate=(event)=>{
     event.preventDefault();
-    axios.put('http://localhost:3000/create/'+id,values)
+    axios.put('https://mpserver-jv3t.onrender.com/create/'+id,values)
     .then(res => {
       console.log(res);
       navigate('/home')

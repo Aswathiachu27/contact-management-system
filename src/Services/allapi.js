@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url="https://mpserver-jv3t.onrender.com"
+const base_url="https://mpserver-jv3t.onrender.com/create"
 
 
 export const addHomeApi=async(data)=>{
